@@ -11,7 +11,7 @@ The directories are pretty self-explanatory:
 Please note that SMBIOS data (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
 please generate your own info and adjust the config.plist accordingly.
 
-**CHANGELOG**
+# CHANGELOG
 
 **V 0.3**
 
