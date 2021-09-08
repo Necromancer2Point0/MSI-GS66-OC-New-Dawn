@@ -10,3 +10,19 @@ The directories are pretty self-explanatory:
 
 Please note that SMBIOS data (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
 please generate your own info and adjust the config.plist accordingly.
+
+**CHANGELOG**
+
+**V 0.3**
+
+- Fixed speakers & headphone audio (VooDoo HDA)
+- Fixed brightness keys (kext)
+- Fixed dGPU turning on upon wake from sleep (sleep works perfectly so far)
+
+**V 0.2**
+
+- Experiments with CPUFriend
+
+**V 0.1**
+
+- The journey begins
