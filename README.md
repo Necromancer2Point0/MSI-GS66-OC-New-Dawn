@@ -5,7 +5,7 @@ This is my EFI build and troubleshooting repository for my MSI GS66.
 The directories and files are pretty self-explanatory:
 
 - "Latest Stable Bootable" is the most functional bootable build I am currently running [EFI A]
-- "Latest WiP Unbootable (0.7.2)" is a work in progress unbootable build I am tinkering with [EFI B]
+- "Latest WiP Unbootable" is a work in progress unbootable build I am tinkering with [EFI B] ---> built for OC 0.7.2
 - archive contains a record of all previous stable build versions
 - debug contains a record of all debug logs for troubleshooting purposes ---> ** as regards [EFI A] **
 - README.md contains this message
