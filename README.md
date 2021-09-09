@@ -17,7 +17,7 @@ please generate your own info and adjust the config.plist accordingly.
 
 | Component | Details |
 |:-: |:-: |
-| Processor | Intel i7-10750H Hexa Core  |
+| Processor | Intel i7-10750H Hexa Core |
 | RAM | 32GB DDR4 |
 | SSD | NVMe |
 | iGPU | Intel UHD 630 Graphics |
@@ -38,6 +38,7 @@ please generate your own info and adjust the config.plist accordingly.
 - Fixed battery management (disabled cfg and xcpm quirks in kernel)
 
 | Comment | So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep. |
+|:-: |
 
 **V 0.3**
 
