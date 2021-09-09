@@ -1,5 +1,19 @@
 # MSI-GS66-OC-New-Dawn
 
+| Component | Details |
+|:-: |:-: |
+| Processor | Intel i7-10750H Hexa Core |
+| RAM | 32GB DDR4 |
+| SSD | NVMe |
+| iGPU | Intel UHD 630 Graphics |
+| dGPU | NVIDIA GeForce RTX 2080 SUPER Max-Q 8GB (hard disabled) |
+| Monitor | 15.6" FHD 300Hz |
+| Audio | Dynaudio Speakers 2W |
+| WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
+| OS Version | Catalina 10.15.7 (w/o Security Update 2021-004) |
+
+# MSI GS66 Stealth 10SGS-036
+
 Welcome to my MSI GS66 hackintosh EFI build log and troubleshooting repository.
 
 The directories and files are pretty self-explanatory:
@@ -13,33 +27,30 @@ The directories and files are pretty self-explanatory:
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
 please generate your own info and adjust the config.plist accordingly.
 
-# MSI GS66 Stealth 10SGS-036
-
-| Component | Details |
-|:-: |:-: |
-| Processor | Intel i7-10750H Hexa Core |
-| RAM | 32GB DDR4 |
-| SSD | NVMe |
-| iGPU | Intel UHD 630 Graphics |
-| dGPU | NVIDIA GeForce RTX 2080 SUPER Max-Q 8GB (hard disabled) |
-| Monitor | 15.6" FHD 300Hz |
-| Audio | Dynaudio Speakers 2W |
-| WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
-| OS Version | Catalina 10.15.7 (w/o Security Update 2021-004) |
-
 # CURRENT FUNCTIONALITY
 
+| Function | Performance |
+|:-: |:-: |
+| USB Patching | Excellent |
+| Sleep | Excellent |
+| Disable dGPU | Excellent |
+| Audio | Excellent |
+| WiFi** | Very Good |
+| Ethernet | Not Tested |
+| Bluetooth | Not Tested |
+| Battery* | Very Good |
+| Brightness & Sound Keys | Excellent |
+| General stability | Excellent |
 
+*So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly even over longer periods and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep. Could tweak further in the future to squeeze out even more juice.
+
+**Sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with occassional dips in signal strength that are neglible in terms of the overall experience.
 
 # CHANGELOG
 
-| **V 0.4** |
+**V 0.4**
 
-| - Fixed battery management (disabled cfg and xcpm quirks in kernel) |
-
-Comment
-
-So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep.
+- Fixed battery management (disabled cfg and xcpm quirks in kernel) |
 
 **V 0.3**
 
