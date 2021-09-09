@@ -28,11 +28,12 @@ please generate your own info and adjust the config.plist accordingly.
 | Brightness & Sound Keys | Excellent |
 | General stability | Excellent |
 
-*Observed that sleep functions properly even over longer periods and that the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep.
 
-**Sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
+*Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep.
 
-***So far so good. Battery life seems reasonably solid. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
+**Heliport sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
+
+***Battery life seems reasonably solid. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
 
 # MSI GS66 Stealth 10SGS-036
 
