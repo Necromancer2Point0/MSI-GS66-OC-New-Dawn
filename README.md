@@ -27,7 +27,17 @@ please generate your own info and adjust the config.plist accordingly.
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
 | OS Version | Catalina 10.15.7 (w/o Security Update 2021-004) |
 
+# CURRENT FUNCTIONALITY
+
+
+
 # CHANGELOG
+
+**V 0.4**
+
+- Fixed battery management (disabled cfg and xcpm quirks in kernel)
+
+Comment: So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep.
 
 **V 0.3**
 
