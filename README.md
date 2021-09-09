@@ -30,7 +30,7 @@ please generate your own info and adjust the config.plist accordingly.
 
 *Sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with occassional dips in signal strength that are neglible in terms of the overall experience.
 
-**So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly even over longer periods and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep. Could tweak further in the future to squeeze out even more juice.
+**So far so good. Battery life seems reasonable. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled. Observed that sleep functions properly even over longer periods and that the time it takes for the laptop to wake is proportional to how long the machine has been asleep. Room for further tweaks.
 
 # MSI GS66 Stealth 10SGS-036
 
