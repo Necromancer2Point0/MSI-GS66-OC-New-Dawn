@@ -13,6 +13,8 @@ The directories and files are pretty self-explanatory:
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
 please generate your own info and adjust the config.plist accordingly.
 
+#
+
 # Current Functionality
 
 | Function | Performance |
