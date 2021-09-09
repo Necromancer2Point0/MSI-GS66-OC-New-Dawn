@@ -25,7 +25,7 @@ please generate your own info and adjust the config.plist accordingly.
 | Monitor | 15.6" FHD 300Hz |
 | Audio | Dynaudio Speakers 2W |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
-| OS Version | Catalina 10.15.7 (**NO Security Update 2021-004**) |
+| OS Version | Catalina 10.15.7 (**w/o Security Update 2021-004**) |
 
 # CHANGELOG
 
