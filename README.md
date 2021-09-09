@@ -4,7 +4,7 @@ Welcome to my MSI GS66 hackintosh EFI build log and troubleshooting repository.
 
 The directories and files are pretty self-explanatory:
 
-- "Latest Stable Bootable" is the most functional bootable build I am currently running [EFI A]
+- "Latest Stable Bootable" is the most functional bootable build I am currently running [EFI A] ---> OC 0.6.0
 - "Latest WiP Unbootable" is a work in progress unbootable build I am tinkering with [EFI B] ---> OC 0.7.2
 - archive contains a record of all previous stable build versions
 - debug contains a record of all debug logs for troubleshooting purposes ---> ** as regards [EFI A] **
