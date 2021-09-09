@@ -36,6 +36,8 @@ please generate your own info and adjust the config.plist accordingly.
 
 ***Battery life seems reasonably solid. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
 
+#
+
 # MSI GS66 Stealth 10SGS-036
 
 | Component | Details |
@@ -49,6 +51,8 @@ please generate your own info and adjust the config.plist accordingly.
 | Audio | Dynaudio Speakers 2W |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
 | OS Version | Catalina 10.15.7 (w/o Security Update 2021-004) |
+
+#
 
 # CHANGELOG
 
