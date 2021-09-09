@@ -28,6 +28,7 @@ please generate your own info and adjust the config.plist accordingly.
 | Brightness & Sound Keys | Excellent |
 | General stability | Excellent |
 
+#
 
 *Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep.
 
