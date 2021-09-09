@@ -33,9 +33,9 @@ please generate your own info and adjust the config.plist accordingly.
 
 # CHANGELOG
 
-| **V 0.4**
+| **V 0.4** |
 
-- Fixed battery management (disabled cfg and xcpm quirks in kernel) |
+| - Fixed battery management (disabled cfg and xcpm quirks in kernel) |
 
 Comment
 
