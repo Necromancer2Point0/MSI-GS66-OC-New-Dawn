@@ -35,7 +35,7 @@ please generate your own info and adjust the config.plist accordingly.
 
 *Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep.
 
-**Heliport is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
+**Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
 
 ***Battery life seems reasonably solid. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
 
@@ -59,9 +59,13 @@ please generate your own info and adjust the config.plist accordingly.
 
 # CHANGELOG
 
+**V 0.5**
+
+- Fixed longstanding graphics bug which would crash preview, system preferences, photoshop... (injected graphics information into device properties)
+
 **V 0.4**
 
-- Fixed battery management (disabled cfg and xcpm quirks in kernel) |
+- Fixed battery management (disabled cfg and xcpm quirks in kernel)
 
 **V 0.3**
 
