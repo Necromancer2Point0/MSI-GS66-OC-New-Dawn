@@ -8,6 +8,7 @@ The directories and files are pretty self-explanatory:
 - "Latest WiP Unbootable" is a work in progress unbootable build I am tinkering with [EFI B] ---> OC 0.7.3
 - archive contains a record of all previous stable build versions
 - debug contains a record of all debug logs for troubleshooting purposes ---> ** as regards [EFI A] **
+- misc contains miscellaneous materials, such as some screenshots of my BIOS settings
 - README.md contains this message
 
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
