@@ -48,7 +48,7 @@ please generate your own info and adjust the config.plist accordingly.
 | RAM | 32GB DDR4 |
 | SSD | NVMe |
 | iGPU | Intel UHD 630 Graphics |
-| dGPU | NVIDIA GeForce RTX 2080 SUPER Max-Q 8GB (hard disabled) |
+| ~~dGPU | NVIDIA GeForce RTX 2080 SUPER Max-Q 8GB~~ |
 | Monitor | 15.6" FHD 300Hz |
 | Audio | Dynaudio Speakers 2W |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX201(2*2 ax) w/ Bluetooth 5.0 |
