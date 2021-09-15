@@ -63,8 +63,8 @@ please generate your own info and adjust the config.plist accordingly.
 
 **V 0.5**
 
-- Fixed longstanding graphics bug which crashed many apps (injected graphics information into device properties)
-- Verified that CPU clock speeds are indeed dynamic (when under load, on idle, and on battery)
+- Fixed longstanding graphics bug that crashed many apps (injected graphics information into device properties)
+- Verified that CPU clock speeds are indeed dynamic (used IPG to monior CPU under load, on idle, and on battery)
 
 **V 0.4**
 
