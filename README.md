@@ -63,8 +63,8 @@ please generate your own info and adjust the config.plist accordingly.
 
 **V 0.5**
 
-- Fixed longstanding graphics bug which would crash preview, system preferences, photoshop... (injected graphics information into device properties)
-- Verified that CPU clock speeds are indeed dynamic, ramping up under load, mellowing out on idle, and capping performance when on battery
+- Fixed longstanding graphics bug which crashed many apps (injected graphics information into device properties)
+- Verified that CPU clock speeds are indeed dynamic (when under load, on idle, and on battery)
 
 **V 0.4**
 
