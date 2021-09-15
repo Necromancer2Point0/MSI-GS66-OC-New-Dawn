@@ -23,10 +23,12 @@ please generate your own info and adjust the config.plist accordingly.
 | USB Patching | Excellent |
 | Sleep* | Excellent |
 | Disable dGPU | Excellent |
+| Enable iGPU | Excellent |
 | Audio | Excellent |
 | WiFi** | Very Good |
 | Ethernet | Not Tested |
 | Bluetooth | Not Tested |
+| CPU Optimisation | Excellent |
 | Battery*** | Very Good |
 | Brightness & Sound Keys | Excellent |
 | General stability | Excellent |
@@ -37,7 +39,7 @@ please generate your own info and adjust the config.plist accordingly.
 
 **Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
 
-***Battery life seems reasonably solid. 6-8 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
+***Battery life seems reasonably solid. Around 6 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
 
 #
 
@@ -62,6 +64,7 @@ please generate your own info and adjust the config.plist accordingly.
 **V 0.5**
 
 - Fixed longstanding graphics bug which would crash preview, system preferences, photoshop... (injected graphics information into device properties)
+- Verified that CPU clock speeds are indeed dynamic, ramping up under load, mellowing out on idle, and capping performance when on battery
 
 **V 0.4**
 
