@@ -28,6 +28,7 @@ please generate your own info and adjust the config.plist accordingly.
 | WiFi** | Very Good |
 | Ethernet | Not Tested |
 | Bluetooth | Not Tested |
+| Thunderbolt | Not Tested |
 | CPU Optimisation | Excellent |
 | Battery*** | Very Good |
 | Brightness & Sound Keys | Excellent |
