@@ -8,7 +8,7 @@ The directories and files are pretty self-explanatory:
 - "Latest WiP Unbootable" is a work in progress unbootable build I am tinkering with [EFI B] ---> OC 0.7.3
 - archive contains a record of all previous stable build versions
 - debug contains a record of all debug logs for troubleshooting purposes ---> ** as regards [EFI A] **
-- misc contains miscellaneous materials, such as some screenshots of my BIOS settings
+- misc contains miscellaneous materials, such as some screenshots of my BIOS settings and an in-depth guide on how to undervolt the machine
 - README.md contains this message
 
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
@@ -31,14 +31,15 @@ please generate your own info and adjust the config.plist accordingly.
 | Thunderbolt | Not Tested |
 | CPU Optimisation | Excellent |
 | Battery*** | Very Good |
+| Undervolting | Excellent |
 | Brightness & Sound Keys | Excellent |
 | General stability | Excellent |
 
 #
 
-*Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep.
+*Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep. Undervolted values are consistently applied in every instance except when waking from auto-sleep (ie screen dims, blacks, then sleeps after X amount of time idling)
 
-**Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are neglible in terms of impacting the overall experience.
+**Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are negligible in terms of impacting the overall experience.
 
 ***Battery life seems reasonably solid. Around 6 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
 
@@ -62,10 +63,16 @@ please generate your own info and adjust the config.plist accordingly.
 
 # CHANGELOG
 
+**V 0.6**
+
+- Undervolted the machine (-100, -50, -100 mv for CPU, GPU, and CPUcache) to achieve better overall temperatures and efficiency (added VoltageShift.kext)
+- Reverse engineered another user's guide and updated the .plists so that the commands work on more recent version of SleepWatcher (2.2.1)
+- Uploaded all relevant files and devised my own, in-depth guide that explains the lengthy process required to undervolt a hackintosh; see "misc" folder
+
 **V 0.5**
 
 - Fixed longstanding graphics bug that crashed many apps (injected graphics information into device properties)
-- Verified CPU clock speeds are indeed dynamic (used IPG to monior CPU under load, on idle, and on battery)
+- Verified CPU clock speeds are indeed dynamic (used IPG to monitor CPU under load, on idle, and on battery)
 
 **V 0.4**
 
