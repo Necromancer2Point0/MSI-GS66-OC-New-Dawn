@@ -68,8 +68,8 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 **V 0.6**
 
 - Undervolted the machine to achieve better overall temperatures and efficiency (added VoltageShift.kext)
-- Reverse engineered another user's guide and updated the .plists so that the commands work for SleepWatcher (2.2.1)
-- Devised my own, in-depth guide that explains the lengthy process of undervolting a hackintosh (see "misc" folder)
+- Reverse engineered and updated SleepWatcher .plists so that the commands work for version 2.2.1
+- Devised my own, in-depth guide about the lengthy process of undervolting a hackintosh (see "misc" folder)
 
 **V 0.5**
 
