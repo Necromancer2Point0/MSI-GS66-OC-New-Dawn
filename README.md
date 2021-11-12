@@ -14,6 +14,8 @@ The directories and files are pretty self-explanatory:
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
 please generate your own info and adjust the config.plist accordingly.
 
+If you do not have an MSI GS66, you may still find the undervolting and sleep dGPU fixes helpful as they are almost universally applicable.
+
 #
 
 # Current Functionality
@@ -67,7 +69,7 @@ please generate your own info and adjust the config.plist accordingly.
 
 - Undervolted the machine to achieve better overall temperatures and efficiency (added VoltageShift.kext)
 - Reverse engineered another user's guide and updated the .plists so that the commands work for SleepWatcher (2.2.1)
-- Uploaded all relevant files and devised my own, in-depth guide that explains the lengthy process required to undervolt a hackintosh; see "misc" folder
+- Devised my own, in-depth guide that explains the lengthy process of undervolting a hackintosh (see "misc" folder)
 
 **V 0.5**
 
