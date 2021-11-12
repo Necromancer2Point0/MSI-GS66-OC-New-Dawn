@@ -65,8 +65,8 @@ please generate your own info and adjust the config.plist accordingly.
 
 **V 0.6**
 
-- Undervolted the machine (-100, -50, -100 mv for CPU, GPU, and CPUcache) to achieve better overall temperatures and efficiency (added VoltageShift.kext)
-- Reverse engineered another user's guide and updated the .plists so that the commands work on more recent version of SleepWatcher (2.2.1)
+- Undervolted the machine to achieve better overall temperatures and efficiency (added VoltageShift.kext)
+- Reverse engineered another user's guide and updated the .plists so that the commands work for SleepWatcher (2.2.1)
 - Uploaded all relevant files and devised my own, in-depth guide that explains the lengthy process required to undervolt a hackintosh; see "misc" folder
 
 **V 0.5**
