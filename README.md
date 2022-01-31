@@ -29,7 +29,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 | Audio | Excellent |
 | WiFi** | Very Good |
 | Ethernet | Not Tested |
-| Bluetooth | Not Tested |
+| Bluetooth | Excellent |
 | Thunderbolt | Not Tested |
 | CPU Optimisation | Excellent |
 | Battery*** | Very Good |
@@ -39,7 +39,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 
 #
 
-*Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep. Undervolted values are consistently applied in every instance except when waking from auto-sleep (ie screen dims, blacks, then sleeps after X amount of time idling)
+*Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep. Undervolted values are consistently applied in every instance ~~except~~ INCLUDING wake from auto-sleep (ie screen dims then sleeps after X amount of time idling)
 
 **Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are negligible in terms of impacting the overall experience.
 
@@ -64,6 +64,12 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 #
 
 # CHANGELOG
+
+**V 0.7**
+
+- Completely overhauled undervolting and fixed all prior issues; values are now applied on every wake from sleep
+- Tested bluetooth functionality and found it works perfectly with a bluetooth speaker
+- Revised my own, in-depth guide about the lengthy process of undervolting a hackintosh (see "misc" folder)
 
 **V 0.6**
 
