@@ -67,7 +67,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 
 **V 0.7**
 
-- Completely overhauled undervolting and fixed all prior issues; values are now applied on every wake from sleep
+- Completely overhauled undervolting and fixed all issues; values are now applied on every wake from sleep
 - Tested bluetooth functionality and found it works perfectly with a bluetooth speaker
 - Revised my own, in-depth guide about the lengthy process of undervolting a hackintosh (see "misc" folder)
 
