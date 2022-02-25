@@ -73,7 +73,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 - Added 300hz support, streamlined EFI, and removed unnecessary Voodoo input kexts
 - Uploaded instructions into misc folder about how to resolve "itlwm not running" bug + other findings
 
-> Massive thank you to Phu54321 for taking the time to share his vast knowledge and EFI, which both served as invaluable references in the development of this update!
+> Massive thank you to user Phu54321 for taking the time to share his vast knowledge and alternative EFI, which both served as invaluable references in the development of this update!
 
 **V 0.7**
 
