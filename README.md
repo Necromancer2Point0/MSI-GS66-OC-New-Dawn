@@ -26,6 +26,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 | Sleep* | Excellent |
 | Disable dGPU | Excellent |
 | Enable iGPU | Excellent |
+| 300hz Support | Excellent |
 | Audio | Excellent |
 | WiFi** | Very Good |
 | Ethernet | Not Tested |
@@ -34,6 +35,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 | CPU Optimisation | Excellent |
 | Battery*** | Very Good |
 | Undervolting | Excellent |
+| Trackpad | Excellent |
 | Brightness & Sound Keys | Excellent |
 | General stability | Excellent |
 
@@ -41,9 +43,9 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 
 *Sleep functions properly even over longer periods and the time it takes for the laptop to wake is relatively proportional to how long the machine has been asleep. Undervolted values are consistently applied in every instance ~~except~~ INCLUDING wake from auto-sleep (ie screen dims then sleeps after X amount of time idling)
 
-**Heliport rarely fails to load and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are negligible in terms of impacting the overall experience.
+**itlwm may fail to run (see misc folder for solution) and is sometimes slow to start up on boot or requires manually connecting to saved networks. Once connected, generally very stable with rare dips in signal strength that are negligible in terms of impacting the overall experience.
 
-***Battery life seems reasonably solid. Around 6 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future.
+***Battery life seems reasonably solid. Around 6 hours on high brightness (2 ticks below max) with RGB keys turned on while web browsing, watching videos, using google maps streetview... CPUFriend is enabled (800mhz + default settings). Room for further tweaks in future. Users may wish to reduce refresh rate (see misc).
 
 #
 
@@ -64,6 +66,15 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 #
 
 # CHANGELOG
+
+
+**V 0.8**
+
+- Updated to latest OC version (0.7.8)
+- Added 300hz support, streamlined EFI, and removed unnecessary Voodoo kexts
+- Uploaded instructions into misc folder about how to resolve "itlwm not running" bug + other findings
+
+> Massive thank you to Phu54321 for sharing his vast knowledge and EFI, which served as invaluable references!
 
 **V 0.7**
 
