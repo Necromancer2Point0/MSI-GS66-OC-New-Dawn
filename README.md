@@ -7,7 +7,7 @@ The directories and files are pretty self-explanatory:
 - "Latest Stable Bootable" is the most functional bootable build I am currently running ---> OC 0.7.8
 - archive contains a record of all previous stable build versions ---> OC 0.6.0 unless otherwise specified
 - debug contains a record of all debug logs for troubleshooting purposes
-- misc contains miscellaneous materials (BIOS settings, bug fixes, and an in-depth guide on how to undervolt the machine)
+- misc contains miscellaneous materials (BIOS settings, bug fixes, and in-depth undervolting guide)
 - README.md contains this message
 
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
