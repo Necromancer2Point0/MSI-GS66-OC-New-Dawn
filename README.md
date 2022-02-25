@@ -4,11 +4,10 @@ Welcome to my MSI GS66 hackintosh EFI build log and troubleshooting repository.
 
 The directories and files are pretty self-explanatory:
 
-- "Latest Stable Bootable" is the most functional bootable build I am currently running [EFI A] ---> OC 0.6.0
-- "Latest WiP Unbootable" is a work in progress unbootable build I am tinkering with [EFI B] ---> OC 0.7.3
-- archive contains a record of all previous stable build versions
-- debug contains a record of all debug logs for troubleshooting purposes ---> ** as regards [EFI A] **
-- misc contains miscellaneous materials (BIOS settings and an in-depth guide on how to undervolt the machine)
+- "Latest Stable Bootable" is the most functional bootable build I am currently running ---> OC 0.7.8
+- archive contains a record of all previous stable build versions ---> OC 0.6.0 unless otherwise specified
+- debug contains a record of all debug logs for troubleshooting purposes
+- misc contains miscellaneous materials (BIOS settings, bug fixes, and an in-depth guide on how to undervolt the machine)
 - README.md contains this message
 
 Please note that SMBIOS data values (ie serials, hardware uuids...) have been redacted. If you wish to use this EFI, 
@@ -71,7 +70,7 @@ If you do not have an MSI GS66, you may still find the undervolting and sleep dG
 **V 0.8**
 
 - Updated to latest OC version (0.7.8)
-- Added 300hz support, streamlined EFI, and removed unnecessary Voodoo kexts
+- Added 300hz support, streamlined EFI, and removed unnecessary Voodoo input kexts
 - Uploaded instructions into misc folder about how to resolve "itlwm not running" bug + other findings
 
 > Massive thank you to Phu54321 for sharing his vast knowledge and EFI, which served as invaluable references!
