@@ -1,0 +1,87 @@
+
+TLDR: download the latest EFI and “Undervolting” folder from misc, MOVE TO DOCUMENTS FOLDER, follow the steps set out in the “Detailed Instructions” section
+
+This is a guide to undervolting the MSI GS66, adapted from profzei’s Matebook X Pro (2018) repository 
+(link: https://github.com/profzei/Matebook-X-Pro-2018/wiki/Undervolt-via-VoltageShift) with up to date 
+instructions that replace the now deprecated SleepWatcher daemon with HammerSpoon + a custom script.
+
+In short, you NEED to follow this guide for undervolting to work properly as profzei’s instructions are incomplete
+and SleepWatcher does not work as intended.
+
+Detailed Instructions
+
+0. Download the “Undervolting” folder in misc and MOVE IT TO YOUR DOCUMENTS FOLDER
+
+1. Move “voltageshift” (the textedit file; NOT the kext) into “Applications/Utilities”
+
+2. Reboot
+
+3. Open terminal and type in the following commands:
+
+cd /Applications/Utilities
+sudo chmod 755 voltageshift
+
+4. Examine the current voltage shift values (should be 0, 0, 0 mv…)
+
+./voltageshift info
+
+5. Undervolt the CPU, GPU, CPUcache (insert your own values but -100, -50, -100 worked for me)
+
+./voltageshift offset -100 -50 -100
+
+6. Check the system for stability. If the system freezes, turn the laptop COMPLETELY OFF and ON again to reset
+
+7. Once satisfied with performance, automate the voltageshift values so that they apply on every start up (BOOT)
+
+sudo ./voltageshift offset -100 -50 -100
+
+sudo ./voltageshift buildlaunchd -100 -50 -100
+
+8. Restart your laptop and verify that the voltage shift values are consistent with each boot
+
+./voltageshift info
+
+9. Install HammerSpoon, a powerful tool that will help us monitor sleep states and call a script on every wake from sleep, ensuring our voltageshift values are automatically applied
+
+Link: https://github.com/Hammerspoon/hammerspoon/releases/tag/0.9.93
+
+
+******************************************************************************************
+10. Copy the contents of the “Config To Copy” txt file into your init.lua config, which you can open from clicking the hammerspoon menu bar icon. ENSURE YOU TYPE IN YOUR OWN USERNAME IN THE RELEVANT LINE (ie the path towards the end of the 6th "elseif")
+******************************************************************************************
+
+
+11. Test to see if your voltageshift values are being applied on wake (both from user initiated and auto-sleep)
+
+./voltageshift info
+
+—
+
+BONUS COMMANDS
+
+A) Verify the current voltageshift values at any time with the following command (should be 0 mv every restart if not set to apply on startup)
+
+./voltageshift info
+
+B) Remove the launchd automation (ie stop the undervolt values from being applied every bootup) with this command
+
+sudo ./voltageshift removelaunchd
+
+C) [OPTIONAL] Remove Sleepwatcher’s deprecated automation with the command below. Open activity monitor and double-check that it no longer runs nor starts up automatically
+
+sudo brew services stop sleepwatcher
+
+—
+
+DISCLAIMER
+
+Undervolting is generally safe but I am NOT responsible for any damage done to your machine should you choose incorrect values that are hard to reverse.
+
+Do your research and own due diligence as to what values are appropriate for your device. Experiment and tweak as needed / whatever you are comfortable with.
+
+“auto-sleep” = when the screen dims, turns to black, and the laptop sleeps after a certain amount of time spent idling
+
+A bandaid fix if things aren't working is to manually apply the values again
+
+cd /Applications/Utilities
+sudo ./voltageshift offset -100 -50 -100
