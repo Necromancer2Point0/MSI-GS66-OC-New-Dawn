@@ -1,0 +1,61 @@
+function caffeinateWatcher(e)
+		if (e == hs.caffeinate.watcher.screensaverDidStart) then
+			print "hs.caffeinate.watcher.screensaverDidStart."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensaverDidStop) then
+			print "hs.caffeinate.watcher.screensaverDidStop."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensaverWillStop) then
+			print "hs.caffeinate.watcher.screensaverWillStop."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensDidLock) then
+			print "hs.caffeinate.watcher.screensDidLock."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensDidSleep) then
+			print "hs.caffeinate.watcher.screensDidSleep."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensDidUnlock) then
+			print "hs.caffeinate.watcher.screensDidUnlock."
+		
+
+		elseif (e == hs.caffeinate.watcher.screensDidWake) then
+			print "hs.caffeinate.watcher.screensDidWake."
+			hs.task.new("/Users/[USERNAME HERE]/Documents/Undervolting/wakeup.sh", nil):start()
+		
+
+		elseif (e == hs.caffeinate.watcher.sessionDidBecomeActive) then
+			print "hs.caffeinate.watcher.sessionDidBecomeActive."
+		
+
+		elseif (e == hs.caffeinate.watcher.sessionDidResignActive) then
+			print "hs.caffeinate.watcher.sessionDidResignActive."
+		
+
+		elseif (e == hs.caffeinate.watcher.systemDidWake) then
+			print "hs.caffeinate.watcher.systemDidWake."
+		
+
+		elseif (e == hs.caffeinate.watcher.systemWillPowerOff) then
+			print "hs.caffeinate.watcher.systemWillPowerOff."
+		
+
+		elseif (e == hs.caffeinate.watcher.systemWillSleep) then
+			print "hs.caffeinate.watcher.systemWillSleep."
+		
+
+		elseif (e == hs.caffeinate.watcher:start()) then
+			print "hs.caffeinate.watcher:start()."
+		
+
+		elseif (e == hs.caffeinate.watcher:stop()) then
+			print "hs.caffeinate.watcher:stop()."
+		end
+end
+
+CW = hs.caffeinate.watcher.new(caffeinateWatcher)
+CW:start()
