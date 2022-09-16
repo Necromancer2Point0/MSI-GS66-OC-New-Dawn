@@ -1,0 +1,7 @@
+Guide on how to swap from 300hz to 60hz
+
+Description: some users may prefer to run the display at 60hz rather than 300hz (eg to preserve battery life). In Big Sur and higher however, it may be necessary to change a boot argument to do so (eg to remedy display bugs and other issues).
+
+To run at 300hz: leave the boot arguments as they are out of the box. In other words, ensure “-igfxmpc” is in the relevant field.
+
+To run at 60hz: replace “-igfxmpc” with “-igfxmlr”

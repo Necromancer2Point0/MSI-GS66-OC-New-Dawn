@@ -1,0 +1,13 @@
+Guide on how to fix “itlwm not running” bug
+
+Description: if the user launches MacOS from coldboot after hibernation (ie chooses MacOS from OC bootloader) when the previous active OS was Windows, itlwm will fail to initalise properly and give the error “itlwm not running”, breaking heliport and rendering wifi unusable unless the system is restarted.
+
+Solution A: Stop the computer from hibernating by searching “lid” in windows search bar and modifying the setting “change what closing the lid does”, ensuring none of the 3 available options for either “on battery” or “plugged in” are set to hibernate (eg sleep, sleep, and sleep for both columns)
+
+Solution B: Stop the computer from hibernating by disabling hibernate in powershell with administrative privileges. Type…
+
+powercfg -h off
+
+(Thanks again to Phu54321 for this proposed solution)
+
+Solution C: Disable windows fastboot by searching “lid” in windows search bar and modifying the “unavailable” settings, unchecking the “fast boot” option.

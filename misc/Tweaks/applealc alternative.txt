@@ -1,0 +1,13 @@
+Misc info on how to swap to applealc
+
+Description: user Phu54321 reports that VoodooHDA is incompatible with Big Sur 11.3+ out of the box and that applealc is preferred in such cases. However, some tweaks are needed to ensure both the headphone jack and speakers produce audio without distortion.
+
+Solution: set applealc to layout-id=16, 10000000 in pci settings
+
+(Full credit to Phu54321 for this proposed solution)
+
+Other useful links:
+
+a) https://github.com/F0x1c/AppleALC_instructions
+
+b) https://www.reddit.com/r/hackintosh/comments/gx7vk1/guide_to_add_new_config_to_applealc/
