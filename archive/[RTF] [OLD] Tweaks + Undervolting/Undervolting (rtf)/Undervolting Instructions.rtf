@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 HelveticaNeue-Light;}
+{\colortbl;\red255\green255\blue255;\red252\green90\blue64;\red251\green0\blue7;\red25\green60\blue255;
+\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c44604\c31621;\cssrgb\c100000\c12195\c0;\cssrgb\c12594\c35385\c100000;
+\cssrgb\c0\c1\c1;\cssrgb\c0\c0\c0\cname textColor;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20980\viewh18620\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \
+\cf3 TLDR: download the latest EFI and \'93Undervolting\'94 folder from misc, MOVE TO DOCUMENTS FOLDER, follow the steps set out in the \'93Detailed Instructions\'94 section
+\f1\b0 \cf0 \
+\
+This is a guide to undervolting the MSI GS66, adapted from profzei\'92s Matebook X Pro (2018) repository \
+(link: \cf4 https://github.com/profzei/Matebook-X-Pro-2018/wiki/Undervolt-via-VoltageShift\cf0 ) with up to date \
+instructions that replace the now deprecated SleepWatcher daemon with HammerSpoon + a custom script.\
+\
+In short, you NEED to follow this guide for undervolting to work properly as profzei\'92s instructions are incomplete\
+and SleepWatcher does not work as intended.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs72 \cf0 Detailed Instructions
+\fs24 \
+\
+0. Download the \'93Undervolting\'94 folder in misc and 
+\f0\b \cf3 \ul \ulc3 MOVE IT TO YOUR DOCUMENTS FOLDER
+\f1\b0 \cf0 \ulnone \
+\
+1. Move \'93voltageshift\'94 (the textedit file; NOT the kext) into \'93Applications/Utilities\'94\
+\
+2. Reboot\
+\
+3. Open terminal and type in the following commands:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 cd /Applications/Utilities\
+sudo chmod 755 voltageshift
+\f1\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+4. Examine the current voltage shift values (should be 0, 0, 0 mv\'85)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 ./voltageshift info
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+5. Undervolt the CPU, GPU, CPUcache (insert your own values but -100, -50, -100 worked for me)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 ./voltageshift offset -100 -50 -100
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+6. Check the system for stability. If the system freezes, turn the laptop COMPLETELY OFF and ON again to reset\
+\
+7. Once satisfied with performance, automate the voltageshift values so that they apply on every start up (BOOT)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 sudo ./voltageshift offset -100 -50 -100
+\f1\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 sudo ./voltageshift buildlaunchd -100 -50 -100
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+8. Restart your laptop and verify that the voltage shift values are consistent with each boot\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 ./voltageshift info
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+9. Install HammerSpoon, a powerful tool that will help us monitor sleep states and call a script on every wake from sleep, ensuring our voltageshift values are automatically applied\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 Link: \cf4 https://github.com/Hammerspoon/hammerspoon/releases/tag/0.9.93
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+10. Copy the contents of the \'93Config To Copy\'94 txt file into your init.lua config, which you can open from clicking the hammerspoon menu bar icon. \cf3 ENSURE YOU TYPE IN YOUR OWN USERNAME IN THE RELEVANT LINE\cf0 \
+\
+11. Test to see if your voltageshift values are being applied on wake (both from user initiated and auto-sleep)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 ./voltageshift info
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'97\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs72 \cf3 BONUS COMMANDS
+\fs24 \cf0 \
+\
+A) Verify the current voltageshift values at any time with the following command (should be 0 mv if restarted)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 ./voltageshift info
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+B) Remove the launchd automation (ie stop the undervolt values from being applied every bootup) with this command\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 sudo ./voltageshift removelaunchd
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+C) Remove Sleepwatcher\'92s deprecated automation with the command below. Open activity monitor and double-check that it no longer runs nor starts up automatically\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 sudo brew services stop sleepwatcher
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'97\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs72 \cf0 DISCLAIMER
+\fs24 \
+\
+Undervolting is generally safe but I am NOT responsible for any damage done to your machine should you choose incorrect values that are hard to reverse.\
+\
+Do your research and own due diligence as to what values are appropriate for your device. Experiment and tweak as needed / whatever you are comfortable with.\
+\
+\'93auto-sleep\'94 = when the screen dims, turns to black, and the laptop sleeps after a certain amount of time spent idling\
+\
+A bandaid fix is to simply apply the values again\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs52 \cf5 cd /Applications/Utilities
+\f3 \cf6 \
+
+\f2 \cf5 sudo ./voltageshift offset -100 -50 -100
+\f1\fs24 \cf0 \
+}
